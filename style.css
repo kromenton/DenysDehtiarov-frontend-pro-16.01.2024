@@ -12,6 +12,9 @@ a {
 }
 
 li {
-  color: green;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
+}
+ul li::marker {
+  color: blue;
+  font-size: 1.8em;
 }

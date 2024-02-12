@@ -4,18 +4,18 @@ const action = prompt(
 const num1 = +prompt('Enter first number');
 const num2 = +prompt('Enter second number');
 let result;
-let symbol;
+let mark;
 if (action === 'add') {
   result = num1 + num2;
-  Symbol = '+';
+  mark = '+';
 } else if (action === 'sub') {
   result = num1 - num2;
-  Symbol = '-';
+  mark = '-';
 } else if (action === 'mult') {
   result = num1 * num2;
-  Symbol = '*';
+  mark = '*';
 } else if (action === 'div') {
   result = num1 / num2;
-  Symbol = '/';
+  mark = '/';
 }
-alert(`"${num1} ${Symbol} ${num2} = ${result}"`);
+alert(`"${num1} ${mark} ${num2} = ${result}"`);

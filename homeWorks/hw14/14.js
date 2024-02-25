@@ -35,8 +35,8 @@ class Car {
 // Example :
 
 const person1 = new Person("John", 25);
-const person2 = new Person("Alice", 17);
-const person3 = new Person("Bob", 30);
+const person2 = new Person("Mark", 17);
+const person3 = new Person("Kent", 30);
 
 
 const car1 = new Car("Toyota", "Corolla", 2015, "blue", person1);

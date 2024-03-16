@@ -14,6 +14,6 @@ arr.sort((a, b) => a - b);
 
 document.write("<br><br>Sorted array: " + arr + "<br>");
 
-arr.splice(2, 3);
+arr.splice(2, 4);
 
 document.write("<br><br>Array after removal: " + arr + "<br>");

@@ -4,7 +4,8 @@ class Student {
         this.lastName = lastName;
         this.birthYear = birthYear;
         this.grades = [];
-        this.attendance = new Array(25).fill(undefined);
+        this.attendance = [];
+        this.MAX_ATTENDANCE_COUNT = 25;
     }
 
     getAge() {

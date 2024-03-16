@@ -10,15 +10,11 @@ class Person {
 }
 
 class Car {
-    constructor(brand, model, year, color, owner) {
+    constructor(brand, model, year, color) {
         this.brand = brand;
         this.model = model;
         this.year = year;
         this.color = color;
-        this.owner = owner;
-        if (owner.age < 18) {
-            this.owner = null;
-        }
     }
 
     getInfo() {
@@ -26,11 +22,20 @@ class Car {
         if (this.owner) {
             console.log("Owner:");
             this.owner.getInfo();
-        } else {
-            console.log("Owner must be at least 18 years old.");
         }
     }
+
+    setOwner(Person) {
+        if (Person.age < 18) {
+            console.log("Owner must be at least 18 years old.");
+            return;
+        }
+        this.owner = Person;
+    }
 }
+
+
+
 
 // Example :
 
@@ -43,6 +48,9 @@ const car1 = new Car("Toyota", "Corolla", 2015, "blue", person1);
 const car2 = new Car("Honda", "Civic", 2020, "green", person2);
 const car3 = new Car("Ford", "Focus", 2018, "red", person3);
 
+car1.setOwner(person1)
 car1.getInfo();
+car2.setOwner(person2)
 car2.getInfo();
+car3.setOwner(person3)
 car3.getInfo();

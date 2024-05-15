@@ -20,15 +20,26 @@ class Student {
 
     present() {
         if (this.attendance.length < this.MAX_ATTENDANCE_COUNT) {
-            this.attendance.push(true);
+            const emptyIndex = this.attendance.indexOf(undefined);
+            if (emptyIndex !== -1) {
+                this.attendance[emptyIndex] = true;
+            } else {
+                this.attendance.push(true);
+            }
         }
     }
 
     absent() {
         if (this.attendance.length < this.MAX_ATTENDANCE_COUNT) {
-            this.attendance.push(false);
+            const emptyIndex = this.attendance.indexOf(undefined);
+            if (emptyIndex !== -1) {
+                this.attendance[emptyIndex] = false;
+            } else {
+                this.attendance.push(false);
+            }
         }
     }
+
 
     summary() {
         const averageGrade =
@@ -145,4 +156,27 @@ console.log(student2.summary());
 student3.grades = gradesArray3;
 student3.present();
 student3.absent();
+student3.absent();
+student3.absent();
+student3.absent();
+student3.absent();
+student3.absent();
+student3.present();
+student3.absent();
+student3.absent();
+student3.absent();
+student3.absent();
+student3.absent();
+student3.absent();
+student3.present();
+student3.absent();
+student3.absent();
+student3.absent();
+student3.present();
+student3.present();
+student3.present();
+student3.present();
+student3.present();
+student3.present();
+student3.present();
 console.log(student3.summary());

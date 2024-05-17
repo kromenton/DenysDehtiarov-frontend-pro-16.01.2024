@@ -11,6 +11,47 @@
 <body>
     <h1>homeWork27</h1>
     <a href="../../..//index.html">Home</a>
+    <h2>Registration Form</h2>
+    <form id="registrationForm">
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName" required><br>
+
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName" required><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="text" id="dob" name="dob" placeholder="yyyy-mm-dd" required><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <label for="city">City:</label><br>
+        <select id="city" name="city" required>
+            <option value="">Select City</option>
+            <option value="London">London</option>
+            <option value="Madrid">Madrid</option>
+            <option value="Krakow">Krakow</option>
+        </select><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br>
+
+        <label>Languages:</label><br>
+        <input type="checkbox" id="english" name="languages" value="english">
+        <label for="english">English</label><br>
+        <input type="checkbox" id="spanish" name="languages" value="spanish">
+        <label for="spanish">Spanish</label><br>
+        <!-- Add more languages as needed -->
+
+        <br><br>
+        <button type="button" onclick="displayData()">Save</button>
+    </form>
+
+    <h2>Data:</h2>
+    <div id="dataDisplay"></div>
     <script src="27.js"></script>
 </body>
 

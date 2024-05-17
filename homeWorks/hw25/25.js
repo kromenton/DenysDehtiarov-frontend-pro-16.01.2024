@@ -1,10 +1,26 @@
 function generateList(array) {
     const ul = document.createElement('ul');
+    let nestedArrayIndex = 0;
+
+    function generateNestedList(nestedArray) {
+        const nestedUl = document.createElement('ul');
+
+        nestedArray.forEach((item, index) => {
+            const li = document.createElement('li');
+            li.textContent = `${nestedArrayIndex}.${item}`;
+            nestedUl.appendChild(li);
+        });
+
+        return nestedUl;
+    }
 
     array.forEach(item => {
         const li = document.createElement('li');
+
         if (Array.isArray(item)) {
-            li.appendChild(generateList(item));
+            nestedArrayIndex++;
+            const nestedUl = generateNestedList(item);
+            li.appendChild(nestedUl);
         } else {
             li.textContent = item;
         }
@@ -14,19 +30,8 @@ function generateList(array) {
     return ul;
 }
 
-// Приклад використання функції
-const array1 = [1, 2, 3, 4, 5];
-const array2 = [1, 2, [1, 2, 3], 4];
+const array1 = [1, 2, [1, 2, 3], 3, [1, 2, 3]];
 
-// Виведення масивів та результатів функції на сторінку
-const displayArray = (title, array) => {
-    const container = document.createElement('div');
-    const header = document.createElement('h3');
-    header.textContent = title;
-    container.appendChild(header);
-    container.appendChild(generateList(array));
-    document.body.appendChild(container);
-};
+const result = generateList(array1);
+document.body.appendChild(result);
 
-displayArray('Array 1', array1);
-displayArray('Array 2', array2);

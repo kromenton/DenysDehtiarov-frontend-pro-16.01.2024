@@ -63,7 +63,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         dataDisplay.innerHTML = "<h3>Entered Data:</h3>";
         const table = document.createElement("table");
-        table.border = "1";
 
         addRow("First Name:", firstName);
         addRow("Last Name:", lastName);

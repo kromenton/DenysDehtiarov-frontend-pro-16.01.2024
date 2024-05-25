@@ -24,11 +24,13 @@ function App() {
     setNewTodo('');
   };
 
+  const sortedTodos = todos.sort((a, b) => a.completed - b.completed);
+
   return (
     <div className="App">
       <h1>Todo List</h1>
       <ul>
-        {todos.map((todo, index) => (
+        {sortedTodos.map((todo, index) => (
           <li
             key={index}
             onClick={() => handleToggle(index)}

@@ -2,6 +2,7 @@
   "name": "user-albums",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kromenton.github.io/DenysDehtiarov-frontend-pro-16.01.2024/homeWorks/hw37",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

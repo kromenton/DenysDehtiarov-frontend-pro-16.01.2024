@@ -5,7 +5,7 @@ import UserList from './components/UserList';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/DenysDehtiarov-frontend-pro-16.01.2024/homeWorks/hw37">
       <div className="container">
         <Routes>
           <Route path="/" element={<UserList />} />

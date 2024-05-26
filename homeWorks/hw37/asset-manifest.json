@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/DenysDehtiarov-frontend-pro-16.01.2024/homeWorks/hw37/static/css/main.84d94006.css",
+    "main.js": "/DenysDehtiarov-frontend-pro-16.01.2024/homeWorks/hw37/static/js/main.1f6a217a.js",
+    "static/js/453.3bc00b65.chunk.js": "/DenysDehtiarov-frontend-pro-16.01.2024/homeWorks/hw37/static/js/453.3bc00b65.chunk.js",
+    "index.html": "/DenysDehtiarov-frontend-pro-16.01.2024/homeWorks/hw37/index.html",
+    "main.84d94006.css.map": "/DenysDehtiarov-frontend-pro-16.01.2024/homeWorks/hw37/static/css/main.84d94006.css.map",
+    "main.1f6a217a.js.map": "/DenysDehtiarov-frontend-pro-16.01.2024/homeWorks/hw37/static/js/main.1f6a217a.js.map",
+    "453.3bc00b65.chunk.js.map": "/DenysDehtiarov-frontend-pro-16.01.2024/homeWorks/hw37/static/js/453.3bc00b65.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84d94006.css",
+    "static/js/main.1f6a217a.js"
+  ]
+}

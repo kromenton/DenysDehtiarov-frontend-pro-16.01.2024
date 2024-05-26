@@ -12,7 +12,7 @@ function UserAlbums({ userId }) {
         } else {
             axios.get(`https://jsonplaceholder.typicode.com/albums?userId=${userId}`)
                 .then(response => {
-                    setAlbums(response.data.slice(0, 3)); // Я ограничил количество альбомов  до 3
+                    setAlbums(response.data.slice(0, 3));
                     setShowAlbums(true);
                 })
                 .catch(error => {
@@ -37,3 +37,4 @@ function UserAlbums({ userId }) {
 }
 
 export default UserAlbums;
+

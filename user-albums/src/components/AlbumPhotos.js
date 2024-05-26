@@ -11,7 +11,7 @@ function AlbumPhotos({ albumId }) {
         } else {
             axios.get(`https://jsonplaceholder.typicode.com/photos?albumId=${albumId}`)
                 .then(response => {
-                    setPhotos(response.data.slice(0, 8)); // Я ограничил количество фотографий до 8
+                    setPhotos(response.data.slice(0, 8));
                     setShowPhotos(true);
                 })
                 .catch(error => {
